@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+        logicalFilePath="1.0-create-tables.xml">
+    <changeSet id="set_dataUUID" author="max">
+
+        <insert tableName="UsersUUID">
+            <column name="id" value="1"></column>
+            <column name="name" value="Max"></column>
+            <column name="surname" value="Tkachenko"></column>
+            <column name="age" value="19"></column>
+        </insert>
+        <insert tableName="UsersUUID">
+            <column name="id" value="2"></column>
+            <column name="name" value="Sasha"></column>
+            <column name="surname" value="Yurchuk"></column>
+            <column name="age" value="18"></column>
+        </insert>
+        <insert tableName="UsersUUID">
+            <column name="id" value="3"></column>
+            <column name="name" value="Valeria"></column>
+            <column name="surname" value="Lozovaya"></column>
+            <column name="age" value="17"></column>
+        </insert>
+
+        <insert tableName="NotificationsUUID">
+            <column name="id" value="1"></column>
+            <column name="userId" value="2"></column>
+            <column name="context" value="КР с вышки 22.09"></column>
+        </insert>
+        <insert tableName="NotificationsUUID">
+            <column name="id" value="2"></column>
+            <column name="userId" value="2"></column>
+            <column name="context" value="Лаба СУБД на пятницу"></column>
+        </insert>
+        <insert tableName="NotificationsUUID">
+            <column name="id" value="3"></column>
+            <column name="userId" value="1"></column>
+            <column name="context" value="Лаба №3 по СП"></column>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+        logicalFilePath="1.0-create-tables.xml">
+    <changeSet id="create_tablesUUID" author="max">
+        <sql>
+            CREATE TABLE UsersUUID
+            (
+            id INT NOT NULL,
+            name TEXT DEFAULT NULL,
+            surname TEXT DEFAULT NULL,
+            age INT DEFAULT NULL,
+            PRIMARY KEY(id)
+            );
+
+            CREATE TABLE NotificationsUUID
+            (
+            id INT NOT NULL,
+            userId INT NOT NULL REFERENCES UsersH.id,
+            context TEXT DEFAULT NULL,
+            PRIMARY KEY(id)
+            );
+        </sql>
+    </changeSet>
+</databaseChangeLog>

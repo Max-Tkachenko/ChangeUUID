@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UUID.iml" filepath="$PROJECT_DIR$/.idea/modules/UUID.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UUID_main.iml" filepath="$PROJECT_DIR$/.idea/modules/UUID_main.iml" group="UUID" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UUID_test.iml" filepath="$PROJECT_DIR$/.idea/modules/UUID_test.iml" group="UUID" />
+    </modules>
+  </component>
+</project>
